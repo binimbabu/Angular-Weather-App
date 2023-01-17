@@ -1,0 +1,16 @@
+<div class="page">
+    <div class="navbar">
+      <input type="text" [(ngModel)]="nameString" placeholder="Search">
+        <div class="list-items">  
+         <div *ngIf="openClose === 'open'" class="list-item" (click)="navigate('weather')">
+            <img src={{imgsrc}}> {{locations.name | search:nameString}}  {{currents.feelslike_c}} C
+         </div>
+         <div *ngIf="openClose === 'open'" class="list-item" (click)="navigate('weatherOne')">
+            <img src={{imgsrc1}}> {{locations1.name | search:nameString}} {{currents1.feelslike_c}} C
+         </div>
+         <div *ngIf="openClose === 'open'" class="list-item" (click)="navigate('weatherTwo')">
+            <img src={{imgsrc2}}> {{locations2.name | search:nameString}} {{currents2.feelslike_c}} C
+         </div>
+        </div>
+    </div>
+</div>

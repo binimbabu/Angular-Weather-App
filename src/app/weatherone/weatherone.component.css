@@ -1,0 +1,25 @@
+.dateCss{
+    text-align: right;
+    font-weight: bold;
+    margin-top: -330px;
+}
+
+
+.lists{
+    margin: 4% 0% 0% 40%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    margin-top: 9%;
+    background-color: #ADD8E6;
+    border-radius: 25px;
+    width: 27%;
+}
+.image{
+    margin: 4% 0% 0% 2%;
+}
+.individual{
+    padding: 1% 0% 16% 24%;
+}
+.multi_lines_text { 
+    white-space: pre-line; 
+}

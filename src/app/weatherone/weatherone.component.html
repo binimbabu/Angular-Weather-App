@@ -1,0 +1,15 @@
+<p class="dateCss">
+    {{now| date:'fullDate' }} &nbsp;  {{now| date:'shortTime' }}
+</p>
+<div class="lists">
+    <img class="image" src={{imgsrc1}}>
+    <div class="individual">
+      {{locations1.name}}  {{currents1.feelslike_c}} C
+      <p>Humidity : {{currents1.humidity}}</p> 
+     </div> 
+  </div>
+  <mat-tab-group mat-align-tabs="center" backgroundColor="accent">
+    <mat-tab label="Today" class="center"><img class="image"src={{imgsrc1}}> 11am 1C &nbsp; <img class="image"src={{imgsrc1}}> 12pm 2C &nbsp;<img class="image"src={{imgsrc1}}> 1pm 3C &nbsp;<img class="image"src={{imgsrc1}}> 3pm 1C &nbsp;<img class="image"src={{imgsrc1}}> 4pm 1C &nbsp; <img class="image"src={{imgsrc1}}> 5pm 0C &nbsp;<img class="image"src={{imgsrc1}}> 6pm -1C &nbsp;<img class="image"src={{imgsrc1}}> 7pm -6C &nbsp;</mat-tab>
+    <mat-tab label="Next 7 Days"><p class="multi_lines_text">17th January Sunny<img class="image"src={{imgsrc1}}> 11-19C</p><p class="multi_lines_text">18th January Light Sunny<img class="image"src={{imgsrc1}}> 1-9C</p><p class="multi_lines_text">19th January Light Sunny<img class="image"src={{imgsrc1}}> 2-9C</p><p class="multi_lines_text">20th January Sunny<img class="image"src={{imgsrc1}}> 1-9C</p><p class="multi_lines_text">21th January Rainy<img class="image"src={{imgsrc1}}> 0-2C</p><p class="multi_lines_text">22nd January Rainy<img class="image"src={{imgsrc1}}> 2-3C</p></mat-tab>
+  </mat-tab-group>
+
